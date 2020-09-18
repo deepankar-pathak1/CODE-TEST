@@ -1,0 +1,7 @@
+p = int(input("Principal : "))
+t = int(input("Time : "))
+r = float(input("rate : "))
+
+a = p*(1+r/100)**t
+c = a - p
+print(c)
