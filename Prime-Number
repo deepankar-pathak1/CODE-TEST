@@ -1,0 +1,29 @@
+# Code to check whether a number is Prime or NOT
+
+print("Please Enter Number Above 2 To check Number is Prime or Not")
+num = int(input("Enter Number Here >>> : "))
+divisible = False
+i = 2
+
+while i < num:
+    if (num % i == 0):
+        divisible = True;
+        print(f"{num} is Divisble by {i}")
+    i += 1
+
+if divisible:
+    print("Number >>> {} is Not Prime".format(num))
+else:
+    print(f"Number >>> {num} is Prime")
+    
+    
+    *** OUTPUT ***
+    
+    
+    
+Enter Number Here >>> : 12
+12 is Divisble by 2
+12 is Divisble by 3
+12 is Divisble by 4
+12 is Divisble by 6
+Number >>> 12 is Not Prime
