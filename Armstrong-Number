@@ -1,0 +1,15 @@
+n =  153
+
+sum = 0
+copy_n = n
+order = len(str(n))
+
+while(n>0):
+    digit = n % 10
+    sum += digit ** order
+    n = n // 10
+
+if (sum == copy_n):
+    print("Armstrong Number ")
+else:
+    print("No Armstrong NUmber")
