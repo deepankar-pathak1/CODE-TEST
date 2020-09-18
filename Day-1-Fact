@@ -1,0 +1,39 @@
+# # def factorial(num):
+# #     return 1 if (num == 0 or num ==1 ) else num * factorial(num-1)
+# #
+# # number = int(input("Enter Number : "))
+# #
+# # print(f"Factorial of Number is {factorial(number)}")
+#
+# def factorial(n):
+#     if n <= 1:
+#         return 1
+#     else:
+#         fact = 1
+#         while(n>1):
+#
+#             fact = fact * n
+#             n = n - 1
+#         n = n + 1
+#         print(f"Factorila of Number is {fact}")
+#
+# num = int(input("Enter Number >> : "))
+#
+# factorial(num)
+#
+def factorial(n):
+    if n < 0:
+        return 0
+    elif (n==0 or n == 1):
+        return 1
+    else:
+        fact = 1
+        while(n>1):
+            fact *= n
+            n -= 1
+        return fact
+        n = n + 1
+
+num = int(input("Enter Number : "))
+
+print(f"Factorial of {num} is {factorial(num)}")
